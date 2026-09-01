@@ -3,1042 +3,160 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gaming in Russia 2026 — Гейминг в России 2026 | интерактивный дашборд РВИ × НАФИ</title>
-<meta name="description" content="Интерактивный дашборд исследования «Гейминг в России 2026» (РВИ × НАФИ × ИФСИ): 4 932 респондента, 75% играют, демография, жанры, траты, пиратство, стереотипы, корреляции. English version inside.">
-<meta name="keywords" content="гейминг в россии 2026, видеоигры россия статистика, исследование нафи, рви, дашборд видеоигры, gaming in russia 2026, video games russia survey, статистика геймеров россия">
-<meta name="author" content="Based on RVI × NAFI × IFSI survey data">
-<meta name="google-site-verification" content="yo1t8OjSl7yxBHN4iX7MHUx0cmHFttodij0eX-YvbS0" />
-<meta name="yandex-verification" content="6724205993e7f276" />
+<title>Василий Овчинников — публичные проекты</title>
+<meta name="description" content="Публичные проекты Василия Овчинникова: интерактивные дашборды и веб-приложения на данных исследований. Public projects hub: interactive dashboards on research data.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://vasiliyovchinnikov.github.io/">
-
-<!-- Open Graph -->
+<meta name="google-site-verification" content="yo1t8OjSl7yxBHN4iX7MHUx0cmHFttodij0eX-YvbS0" />
+<meta name="yandex-verification" content="6724205993e7f276" />
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Gaming in Russia 2026">
-<meta property="og:title" content="Gaming in Russia 2026 — Гейминг в России 2026">
-<meta property="og:description" content="Кто играет в России: 4 932 респондента, 42 интерактивных графика, фильтры по полу/возрасту/городам, корреляции. Данные РВИ × НАФИ × ИФСИ.">
+<meta property="og:site_name" content="Публичные проекты — Василий Овчинников">
+<meta property="og:title" content="Василий Овчинников — публичные проекты">
+<meta property="og:description" content="Интерактивные дашборды и веб-приложения на открытых данных.">
 <meta property="og:url" content="https://vasiliyovchinnikov.github.io/">
 <meta property="og:locale" content="ru_RU">
 <meta property="og:locale:alternate" content="en_US">
-<meta property="og:image" content="https://vasiliyovchinnikov.github.io/og-cover.png">
-
-<!-- Twitter -->
+<meta property="og:image" content="https://vasiliyovchinnikov.github.io/og-cover-hub.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Gaming in Russia 2026 — Гейминг в России 2026">
-<meta name="twitter:description" content="Интерактивный дашборд: кто играет в России, сколько тратит и что думает. 4 932 респондента, 42 графика.">
-
-<!-- Favicon -->
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230e1116'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%234f8cff' font-family='Arial' font-weight='bold'%3E%F0%9F%8E%AE%3C/text%3E%3C/svg%3E">
-
-<!-- Structured data -->
+<meta name="twitter:title" content="Василий Овчинников — публичные проекты">
+<meta name="twitter:description" content="Интерактивные дашборды и веб-приложения на открытых данных.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230e1116'/%3E%3Ctext x='50' y='72' font-size='58' text-anchor='middle' fill='%234f8cff' font-family='Arial' font-weight='bold'%3E%E2%97%86%3C/text%3E%3C/svg%3E">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "Gaming in Russia 2026 — Гейминг в России 2026",
+  "name": "Публичные проекты — Василий Овчинников",
   "url": "https://vasiliyovchinnikov.github.io/",
-  "description": "Интерактивный дашборд социологического исследования «Гейминг в России 2026» (РВИ × НАФИ × ИФСИ)",
   "inLanguage": ["ru", "en"],
-  "about": {
-    "@type": "Survey",
-    "name": "Gaming in Russia 2026",
-    "organizer": [{"@type": "Organization", "name": "РВИ (Russian Video Games Industry)"},
-                   {"@type": "Organization", "name": "НАФИ"},
-                   {"@type": "Organization", "name": "ИФСИ"}],
-    "numberOfParticipants": 4932
-  },
-  "isBasedOn": "https://gaminginrussia.forgamedev.ru"
+  "publisher": {"@type": "Person", "name": "Василий Овчинников", "url": "https://github.com/vasiliyovchinnikov"},
+  "hasPart": [{
+    "@type": "WebApplication",
+    "name": "Gaming in Russia 2026 — Гейминг в России 2026",
+    "url": "https://vasiliyovchinnikov.github.io/gaming-in-russia-2026/",
+    "applicationCategory": "DataVisualization",
+    "inLanguage": ["ru", "en"]
+  }]
 }
 </script>
-<script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
 <style>
-:root{
-  --bg:#0e1116; --panel:#161b23; --panel2:#1c232e; --border:#262f3d;
-  --text:#e8ecf1; --muted:#8b96a5; --accent:#4f8cff; --accent2:#22c55e;
-  --neg:#f87171; --warn:#fbbf24; --chip:#223047;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--text);font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
-a{color:var(--accent);text-decoration:none}
-a:hover{text-decoration:underline}
-.wrap{max-width:1280px;margin:0 auto;padding:0 20px}
-
-/* header */
-header{border-bottom:1px solid var(--border);background:linear-gradient(180deg,#131a26,#0e1116);position:sticky;top:0;z-index:50;backdrop-filter:blur(8px)}
-.hrow{display:flex;align-items:center;gap:14px;padding:12px 0;flex-wrap:wrap}
-.logo{font-size:19px;font-weight:700;letter-spacing:.2px}
-.logo span{color:var(--accent)}
-.sub{color:var(--muted);font-size:12.5px}
-.langswitch{margin-left:auto;display:flex;background:var(--panel2);border:1px solid var(--border);border-radius:8px;overflow:hidden}
-.langswitch button{background:none;border:none;color:var(--muted);padding:7px 14px;cursor:pointer;font-size:13px;font-weight:600}
-.langswitch button.on{background:var(--accent);color:#fff}
-
-/* nav */
-nav{display:flex;gap:4px;overflow-x:auto;padding:0 0 10px;scrollbar-width:none}
-nav::-webkit-scrollbar{display:none}
-nav a{color:var(--muted);font-size:13px;padding:6px 12px;border-radius:20px;white-space:nowrap}
-nav a:hover{color:var(--text);background:var(--chip);text-decoration:none}
-
-/* hero */
-.hero{padding:34px 0 10px}
-.hero h1{font-size:30px;font-weight:800;line-height:1.2}
-.hero .lead{color:var(--muted);margin-top:8px;max-width:760px;font-size:15px}
-.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:22px 0}
-.kpi{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:16px 18px}
-.kpi .v{font-size:26px;font-weight:800}
-.kpi .l{color:var(--muted);font-size:12.5px;margin-top:3px}
-.kpi .n{font-size:11px;color:#5b6575;margin-top:6px}
-
-/* filters */
-.filters{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:14px 18px;margin:14px 0 8px;position:sticky;top:57px;z-index:40}
-.frow{display:flex;flex-wrap:wrap;gap:14px;align-items:flex-end}
-.fgroup{display:flex;flex-direction:column;gap:4px}
-.fgroup label{font-size:11.5px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.4px}
-select{background:var(--panel2);color:var(--text);border:1px solid var(--border);border-radius:8px;padding:7px 10px;font-size:13.5px;min-width:120px;cursor:pointer}
-.fbase{margin-left:auto;color:var(--muted);font-size:12.5px;text-align:right}
-.fbase b{color:var(--text)}
-.reset{background:none;border:1px solid var(--border);color:var(--muted);border-radius:8px;padding:7px 14px;cursor:pointer;font-size:13px}
-.reset:hover{color:var(--text);border-color:var(--accent)}
-
-/* sections */
-section{padding:26px 0 6px}
-h2{font-size:21px;font-weight:800;margin-bottom:4px;display:flex;align-items:center;gap:10px}
-h2 .num{color:var(--accent);font-size:14px;font-weight:700;background:var(--chip);border-radius:6px;padding:2px 8px}
-.secdesc{color:var(--muted);font-size:13.5px;margin-bottom:16px;max-width:820px}
-.grid{display:grid;gap:14px}
-.g2{grid-template-columns:repeat(auto-fit,minmax(430px,1fr))}
-.g3{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
-.card{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:16px 16px 8px}
-.card h3{font-size:14.5px;font-weight:700;margin-bottom:2px}
-.card .base{font-size:11.5px;color:var(--muted);margin-bottom:8px}
-.chart{width:100%;height:340px}
-.chart.tall{height:420px}
-.chart.small{height:280px}
-
-/* callouts */
-.callout{background:linear-gradient(180deg,#1a2130,#161b23);border:1px solid #2b3a55;border-radius:12px;padding:18px 20px;margin:10px 0}
-.callout .t{font-weight:700;margin-bottom:6px;color:var(--accent)}
-.callout p{font-size:14px;color:#c6cfdb}
-
-/* correlation section */
-.corr-note{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:14px 18px;font-size:13px;color:var(--muted);margin-bottom:14px}
-.corrresult{margin:14px 0 4px;font-size:19px;font-weight:700;text-align:center;line-height:1.45;overflow-wrap:anywhere}
-.corrresult .sub{font-size:12.5px;font-weight:500;color:var(--muted);margin-top:2px}
-.attrow{display:grid;grid-template-columns:minmax(230px,1.4fr) minmax(120px,1fr);gap:10px;align-items:center;padding:8px 12px;border-radius:8px;cursor:pointer}
-.attrow:hover{background:var(--panel2)}
-.attrow .nm{font-size:13.5px}
-.attrow .bar{height:22px;border-radius:5px;background:var(--panel2);position:relative;overflow:hidden}
-.attrow .bar .fill{position:absolute;top:0;bottom:0;left:0;border-radius:5px}
-.attrow .pct{position:absolute;right:8px;top:2px;font-size:11.5px;color:var(--text);font-weight:700}
-.attrow .pv{font-size:11.5px;color:var(--muted);text-align:right;min-width:64px}
-
-/* footer */
-footer{border-top:1px solid var(--border);margin-top:34px;padding:26px 0 40px;color:var(--muted);font-size:13px}
-footer .flinks{display:flex;gap:18px;flex-wrap:wrap;margin-top:10px}
-footer a{font-weight:600}
-.method{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:16px 18px;margin-top:14px;font-size:13px;color:var(--muted)}
-.method b{color:var(--text)}
-.tag{display:inline-block;background:var(--chip);border-radius:6px;padding:1px 8px;font-size:11px;color:var(--muted);margin-left:6px}
-[lang-switch-hidden]{display:none}
-.hidden{display:none}
-@media(max-width:760px){
-  .g2,.g3{grid-template-columns:1fr}
-  .hero h1{font-size:24px}
-  .fbase{width:100%;text-align:left}
-  .filters{position:static}
-  .attrow{grid-template-columns:1fr;gap:3px;padding:8px 10px}
-  .attrow .bar{height:20px}
-  .card{padding:14px 12px 6px}
-  .chart{height:300px}
-  .chart.tall{height:380px}
-  .chart.small{height:250px}
-  .fgroup select{min-width:0;flex:1}
-  .fgroup{flex:1 1 40%}
-  h2{font-size:18px}
-  .kpi .v{font-size:22px}
-}
+:root{--bg:#0e1116;--panel:#161b23;--panel2:#1c232e;--border:#262f3d;--text:#e8ecf1;--muted:#8b96a5;--accent:#4f8cff;--green:#22c55e}
+*{margin:0;padding:0;box-sizing:border-box}
+html{background:var(--bg)}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Inter,Arial,sans-serif;line-height:1.5;min-height:100vh;display:flex;flex-direction:column}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px;width:100%}
+header{padding:28px 0 0}
+.hrow{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:14px}
+.mark{width:46px;height:46px;border-radius:13px;background:linear-gradient(135deg,#4f8cff,#22c55e);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:17px;color:#fff;letter-spacing:.5px;flex:none}
+.who{font-size:13.5px;color:var(--muted)}
+.who b{display:block;color:var(--text);font-size:16.5px;font-weight:700}
+.langs{display:flex;gap:8px}
+.langs button{background:var(--panel);border:1px solid var(--border);color:var(--muted);padding:8px 14px;border-radius:999px;font-size:13px;cursor:pointer;transition:.15s;font-family:inherit}
+.langs button.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.hero{padding:64px 0 6px}
+.hero h1{font-size:44px;font-weight:800;letter-spacing:-.5px;line-height:1.15}
+.hero h1 .b{color:var(--accent)}
+.hero p{color:var(--muted);margin-top:14px;font-size:17px;max-width:660px}
+.seclabel{display:flex;align-items:center;gap:12px;margin:52px 0 22px;color:var(--muted);font-size:13px;letter-spacing:2.5px;text-transform:uppercase;font-weight:600}
+.seclabel:after{content:'';flex:1;height:1px;background:var(--border)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
+.card{display:block;background:var(--panel);border:1px solid var(--border);border-radius:16px;overflow:hidden;text-decoration:none;color:var(--text);transition:transform .18s,border-color .18s,box-shadow .18s}
+.card:hover{transform:translateY(-3px);border-color:var(--accent);box-shadow:0 14px 36px rgba(0,0,0,.5)}
+.thumb{background:var(--panel2);border-bottom:1px solid var(--border)}
+.thumb img{width:100%;display:block}
+.cbody{padding:18px 20px 20px}
+.cbody h2{font-size:20px;font-weight:700}
+.cbody .sub{color:var(--muted);font-size:13px;margin-top:2px}
+.cbody p{color:var(--muted);font-size:14px;margin-top:10px;line-height:1.55}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.tag{font-size:12px;color:var(--muted);background:var(--panel2);border:1px solid var(--border);padding:4px 10px;border-radius:999px;white-space:nowrap}
+.cfoot{display:flex;justify-content:space-between;align-items:center;margin-top:18px}
+.go{color:var(--accent);font-weight:600;font-size:14px}
+.yr{color:var(--muted);font-size:13px}
+.card:hover .arr{transform:translateX(4px)}
+.arr{display:inline-block;transition:transform .18s}
+.hint{margin-top:28px;color:#5b6575;font-size:14px}
+footer{margin-top:auto;border-top:1px solid var(--border);padding:22px 0 30px;color:#5b6575;font-size:14px}
+.frow{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--accent)}
+@media(max-width:640px){.hero{padding:44px 0 4px}.hero h1{font-size:31px}.hero p{font-size:15.5px}}
 </style>
 </head>
 <body>
-<noscript>
-  <div style="max-width:800px;margin:40px auto;padding:20px;font-family:sans-serif;color:#e8ecf1;background:#161b23;">
-    <h1>Gaming in Russia 2026 — Гейминг в России 2026</h1>
-    <p>Интерактивный дашборд социологического исследования РВИ × НАФИ × ИФСИ. Для интерактивных графиков нужен JavaScript.</p>
-    <h2>Ключевые результаты исследования</h2>
-    <ul>
-      <li>75% россиян 14+ играют в видеоигры (4 932 респондента, взвешенная выборка)</li>
-      <li>Каждый третий взрослый играет ежедневно; среди 18–24 лет — более половины</li>
-      <li>Мобильный телефон — главное игровое устройство; ПК — вторая платформа</li>
-      <li>Волгоград — лидер среди городов-миллионников по доле играющих (83%)</li>
-      <li>Женщины — значимая часть аудитории, но гендерные стереотипы о геймерах живучи</li>
-      <li>Часть игроков скачивает игры с торрентов и использует зарубежные аккаунты из-за барьеров оплаты</li>
-      <li>44% неигроков хотели бы начать играть</li>
-    </ul>
-    <h2>Разделы дашборда</h2>
-    <p>Обзор аудитории · Игровые привычки · Деньги и рынок · Отношение и стереотипы · Резонансные темы · Дети и родители · Киберспорт и сообщества · Те, кто не играет · Корреляции</p>
-    <p>Полная версия исследования: <a href="https://gaminginrussia.forgamedev.ru" style="color:#4f8cff;">gaminginrussia.forgamedev.ru</a></p>
-  </div>
-</noscript>
-<header>
-  <div class="wrap">
-    <div class="hrow">
-      <div>
-        <div class="logo">Gaming<span> in Russia</span> 2026</div>
-        <div class="sub" data-i18n="subtitle">Интерактивный дашборд социологического исследования</div>
-      </div>
-      <div class="langswitch">
-        <button id="btnRu" class="on" onclick="setLang('ru')">Русский</button>
-        <button id="btnEn" onclick="setLang('en')">English</button>
-      </div>
-    </div>
-    <nav id="nav"></nav>
-  </div>
-</header>
-
 <div class="wrap">
-  <div class="hero">
-    <h1 data-i18n="h1">Гейминг в России 2026</h1>
-    <p class="lead" data-i18n="lead">Социологическое исследование РВИ × НАФИ × ИФСИ. Все цифры на этой странице пересчитываются в вашем браузере из микроданных опроса — меняйте фильтры и наблюдайте, как меняются распределения и корреляции.</p>
-    <div class="kpis" id="kpis"></div>
-    <div class="filters">
-      <div class="frow">
-        <div class="fgroup"><label data-i18n="fSex">Пол</label>
-          <select id="fSex"><option value="" data-i18n="fAll">Все</option></select></div>
-        <div class="fgroup"><label data-i18n="fAge">Возраст</label>
-          <select id="fAge"><option value="" data-i18n="fAll">Все</option></select></div>
-        <div class="fgroup"><label data-i18n="fCity">Город-миллионник</label>
-          <select id="fCity"><option value="" data-i18n="fAll">Все</option></select></div>
-        <div class="fgroup"><label data-i18n="fFO">Округ</label>
-          <select id="fFO"><option value="" data-i18n="fAll">Все</option></select></div>
-        <div class="fgroup"><label data-i18n="fGamer">Игровой статус</label>
-          <select id="fGamer"><option value="" data-i18n="fAll">Все</option>
-            <option value="gamer" data-i18n="optGamer">Игроки</option>
-            <option value="nongamer" data-i18n="optNonGamer">Не играют</option></select></div>
-        <button class="reset" onclick="resetFilters()" data-i18n="fReset">Сбросить</button>
-        <div class="fbase" id="fbase"></div>
+  <header>
+    <div class="hrow">
+      <div class="logo">
+        <div class="mark" id="mark">ВО</div>
+        <div class="who"><b id="whoName">Василий Овчинников</b><span id="whoRole">публичные проекты</span></div>
+      </div>
+      <div class="langs">
+        <button id="btnRu" class="on">Русский</button>
+        <button id="btnEn">English</button>
       </div>
     </div>
-  </div>
-
-  <div id="sections"></div>
-
-  <footer>
-    <div data-i18n="footText">Дашборд построен на микроданных исследования. Источник и полная версия отчёта — на официальном сайте:</div>
-    <div class="flinks">
-      <a href="https://gaminginrussia.forgamedev.ru" target="_blank" rel="noopener" data-i18n="linkOfficial">gaminginrussia.forgamedev.ru — официальный сайт исследования «Гейминг в России 2026»</a>
-      <a href="https://forgamedev.ru" target="_blank" rel="noopener">forgamedev.ru — РВИ</a>
-      <a href="https://nafi.ru" target="_blank" rel="noopener">nafi.ru — НАФИ</a>
-    </div>
-    <div class="method" id="method"></div>
-  </footer>
+  </header>
+  <main class="hero">
+    <h1 id="heroT"></h1>
+    <p id="heroP"></p>
+  </main>
+  <div class="seclabel" id="secL"></div>
+  <div class="grid" id="grid"></div>
+  <div class="hint" id="hint"></div>
 </div>
-
-<script src="data.js"></script>
+<footer>
+  <div class="wrap frow">
+    <span id="ftL">© 2026</span>
+    <a href="https://github.com/vasiliyovchinnikov" target="_blank" rel="noopener" id="ftG">Исходники на GitHub →</a>
+  </div>
+</footer>
 <script>
-'use strict';
-/* ============ i18n ============ */
-const I18N = {
-  ru: {
-    subtitle:'Интерактивный дашборд социологического исследования · РВИ × НАФИ × ИФСИ',
-    h1:'Гейминг в России 2026',
-    lead:'Социологическое исследование РВИ × НАФИ × ИФСИ. Все цифры на этой странице пересчитываются в вашем браузере из микроданных опроса — меняйте фильтры и наблюдайте, как меняются распределения и корреляции.',
-    fSex:'Пол', fAge:'Возраст', fCity:'Город-миллионник', fFO:'Округ', fGamer:'Игровой статус', fAll:'Все', fReset:'Сбросить',
-    optGamer:'Игроки', optNonGamer:'Не играют',
-    base:'База: <b>%n</b> респондентов (взвешенно %w)',
-    baseG:'из них игроки: <b>%g</b>',
-    agree:'Согласны, %',
-    kpiGamers:'играют в видеоигры (14+)',
-    kpiDaily:'играют ежедневно',
-    kpiHours:'среднее часов в неделю у игроков',
-    kpiSpend:'медианные траты платящих, ₽/год',
-    secOverview:'Обзор аудитории', secOverviewD:'Кто играет в России: демография, частота, платформы. Первый взгляд на масштаб явления.',
-    secHabits:'Игровые привычки', secHabitsD:'Частота и длительность игровых сессий, динамика за год, любимые жанры и конкретные игры.',
-    secMoney:'Деньги и рынок', secMoneyD:'Траты, способы покупки, магазины и барьеры — включая пиратство и зарубежные аккаунты.',
-    secAttitudes:'Отношение и стереотипы', secAttitudesD:'Что россияне думают о видеоиграх: от пользы для навыков до гендерных стереотипов. Кликните по утверждению, чтобы увидеть, с кем оно коррелирует.',
-    secResonance:'Резонансные темы', secResonanceD:'Самые обсуждаемые находки исследования: ежедневная игра, мобильное доминирование, стереотипы о геймершах, пиратство и отношение родителей.',
-    secChildren:'Дети и родители', secChildrenD:'Блок о родителях детей 7–14 лет: во что играют дети, контролируют ли время, играют ли вместе.',
-    secEsports:'Киберспорт и сообщества', secEsportsD:'Осведомлённость о киберспорте и профессиях индустрии, участие в игровых сообществах.',
-    secNonGamers:'Те, кто не играет', secNonGamersD:'Причины отказа от видеоигр и потенциальный спрос: 44% неигроков хотели бы начать.',
-    secCorr:'Корреляции', secCorrD:'Матрица связей между признаками. Выберите две переменные — коэффициент пересчитается на лету с учётом фильтров. Отрицательные значения — голубой, положительные — зелёный.',
-    chartSex:'Кто играет, по полу', chartAge:'Игроки по возрасту', chartFreq:'Частота игры', chartTrend:'Изменение времени за год',
-    chartDevices:'Устройства (игроки, за месяц)', chartMainDev:'Основное устройство', chartSession:'Длительность сессии', chartHours:'Часов за последнюю неделю',
-    chartFormat:'Одиночные vs командные', chartGenres:'Жанры — ПК', chartGenresM:'Жанры — мобильные', chartGenresC:'Жанры — консоли',
-    chartGames:'Игры, в которые играли за год', chartRuKnow:'Российские игры: знают / играют / хотят',
-    chartSpend:'Траты на игры за год (среди платящих)', chartBuy:'Что покупали за год', chartWays:'Как приобретают игры', chartStores:'Магазины', chartStoresNote:'среди покупавших',
-    chartPayDiff:'Барьеры оплаты (сталкивались)', chartWouldBuy:'«Покупали бы лицензионные, если бы оплата была удобной»', chartForeign:'Зарубежные аккаунты (ПК и консоли)',
-    chartPirate:'Пиратство: скачивание с торрентов', chartCommunity:'Участие в сообществах', chartCommPlat:'Где общаются во время игры',
-    chartEsportsKnow:'Знают, что такое киберспорт', chartEsportsDef:'Верно определяют киберспорт', chartJobs:'Профессии индустрии на слуху',
-    chartChildPlays:'Дети 7–14 играют', chartChildGames:'Во что играют дети', chartChildTime:'Время детей за играми в день',
-    chartChildControl:'Контроль времени ребёнка', chartCoPlay:'Играют вместе с ребёнком', chartChildAttitude:'Отношение родителей к играм ребёнка',
-    chartReasons:'Почему не играют', chartWantStart:'Неигроки: хотели бы начать',
-    chartMotives:'Мотивы начать играть', chartStopMotives:'Причины бросить игру', chartSkills:'Навыки от игр — согласие', chartLeisure:'Свободное время: чем занимаются',
-    corrPickA:'Первая переменная', corrPickB:'Вторая переменная', corrResult:'Результат', corrCoef:'Коэффициент корреляции',
-    corrN:'пар в расчёте', corrExp:'Как читать: значения от −1 до 1. Близко к 0 — связи нет; чем дальше от 0, тем сильнее связь. Это корреляция, а не причинность.',
-    topAgree:'Наиболее поддерживаемые утверждения (клик — корреляции)',
-    genderStereotypes:'Гендерные стереотипы о геймерах',
-    attVsX:'Согласие с утверждением по группам',
-    resonTitle:'Что вызвало наибольший резонанс',
-    methodTitle:'Методология',
-    methodText:'Опрос проведён НАФИ по заказу РВИ и ИФСИ (полевой этап — октябрь 2025). Выборка 4 932 респондента от 14 лет, взвешивание по полу, возрасту, региону и размеру населённого пункта. Данный дашборд — неофициальный интерактивный инструмент поверх открытых микроданных; при цитировании ссылайтесь на официальное исследование.',
-    agreeShort:'Согласны',
-    ofGamers:'от игроков',
-    ofNonGamers:'от неигроков',
-    ofPayers:'от плативших',
-    ofPCconsole:'от игроков на ПК/консолях',
-    ofParents:'от родителей детей 7–14',
-    ofAnswered:'от ответивших',
-    resCardT1:'Каждый третий — ежедневный игрок',
-    resCardD1:'Доля совершеннолетних, играющих ежедневно, выросла с 23% (2022) до 34% (2025). В фильтре выше выберите 18–24 — и увидите, что среди молодёжи ежедневная игра уже норма.',
-    resCardT2:'Мобильный телефон — главная платформа',
-    resCardD2:'Телефон — устройство игры для большинства российских геймеров; ПК — вторая платформа, консоли остаются нишевыми (~11% игроков).',
-    resCardT3:'«Женщины не играют» — миф, но стереотипы живучи',
-    resCardD3:'Женщины составляют значимую часть аудитории, при этом часть респондентов по-прежнему согласна со стереотипами «девушки играют ради внимания мужчин» и «женщины предпочитают простые игры». Откройте раздел «Отношение и стереотипы» и кликните утверждение, чтобы увидеть, кто именно с ним согласен.',
-    resCardT4:'Пиратство и обходные пути',
-    resCardD4:'Заметная доля игроков скачивает игры с торрентов и использует зарубежные аккаунты для оплаты — прямое следствие блокировок платёжных сервисов. При этом многие заявляют готовность платить, если оплата станет удобной.',
-    resCardT5:'Волгоград — столица гейминга',
-    resCardD5:'Среди городов-миллионников Волгоград лидирует по доле играющих (83%). Проверьте сами в фильтре «Город-миллионник».',
-    resCardT6:'Родители играют вместе с детьми',
-    resCardD6:'Большинство родителей детей 7–14 лет относятся к играм ребёнка положительно или нейтрально и проявляют вовлечённость: интересуются достижениями, контролируют время.',
-    linkOfficial:'gaminginrussia.forgamedev.ru — официальный сайт исследования «Гейминг в России 2026»',
-    footText:'Дашборд построен на микроданных исследования. Источник и полная версия отчёта — на официальном сайте:',
-    vsAll:'vs все респонденты',
-    groupDiff:'разница с общей базой, п.п.',
-    loading:'Загрузка…',
-    chartSources:'Источники информации',
-    chartHobbies:'Цифровые хобби',
-    chartVideo:'Смотрят игровые видео',
-    chartSelfId:'Считают себя геймером',
-  },
-  en: {
-    subtitle:'Interactive dashboard of a sociological survey · RVI × NAFI × IFSI',
-    h1:'Gaming in Russia 2026',
-    lead:'A sociological study by RVI × NAFI × IFSI. Every figure on this page is recomputed in your browser from survey microdata — change the filters and watch distributions and correlations update.',
-    fSex:'Sex', fAge:'Age', fCity:'Million+ city', fFO:'Federal district', fGamer:'Gaming status', fAll:'All', fReset:'Reset',
-    optGamer:'Gamers', optNonGamer:'Non-gamers',
-    base:'Base: <b>%n</b> respondents (weighted %w)',
-    baseG:'gamers among them: <b>%g</b>',
-    agree:'Agree, %',
-    kpiGamers:'play video games (14+)',
-    kpiDaily:'play daily',
-    kpiHours:'avg weekly hours among gamers',
-    kpiSpend:'median spend of payers, ₽/yr',
-    secOverview:'Audience overview', secOverviewD:'Who plays in Russia: demographics, frequency, platforms.',
-    secHabits:'Gaming habits', secHabitsD:'Session frequency and length, year-over-year dynamics, favourite genres and specific games.',
-    secMoney:'Money & market', secMoneyD:'Spending, purchase channels, stores and barriers — including piracy and foreign accounts.',
-    secAttitudes:'Attitudes & stereotypes', secAttitudesD:'What Russians think about video games — from skill benefits to gender stereotypes. Click a statement to see who agrees with it.',
-    secResonance:'Talking points', secResonanceD:'The survey findings that resonated most: daily gaming, mobile dominance, stereotypes about female gamers, piracy and parental attitudes.',
-    secChildren:'Children & parents', secChildrenD:'Parents of 7–14-year-olds: what kids play, time control, co-play.',
-    secEsports:'Esports & communities', secEsportsD:'Awareness of esports and industry jobs; gaming community membership.',
-    secNonGamers:'Non-gamers', secNonGamersD:'Reasons not to play, and latent demand.',
-    secCorr:'Correlations', secCorrD:'An association matrix between traits. Pick two variables — the coefficient is recomputed live with current filters. Negative = blue, positive = green.',
-    chartSex:'Who plays, by sex', chartAge:'Gamers by age', chartFreq:'Gaming frequency', chartTrend:'Time spent vs a year ago',
-    chartDevices:'Devices (gamers, last month)', chartMainDev:'Primary device', chartSession:'Session length', chartHours:'Hours played last week',
-    chartFormat:'Single vs team play', chartGenres:'Genres — PC', chartGenresM:'Genres — mobile', chartGenresC:'Genres — console',
-    chartGames:'Games played last year', chartRuKnow:'Russian games: aware / play / want',
-    chartSpend:'Annual spending (among payers)', chartBuy:'What was bought last year', chartWays:'How games are acquired', chartStores:'Stores', chartStoresNote:'among buyers',
-    chartPayDiff:'Payment barriers (encountered)', chartWouldBuy:'“Would buy licensed games if payment were easy”', chartForeign:'Foreign accounts (PC & console)',
-    chartPirate:'Piracy: torrent downloads', chartCommunity:'Community membership', chartCommPlat:'Voice platforms while gaming',
-    chartEsportsKnow:'Know what esports is', chartEsportsDef:'Define esports correctly', chartJobs:'Industry jobs heard of',
-    chartChildPlays:'Children 7–14 who play', chartChildGames:'What children play', chartChildTime:'Children’s daily playtime',
-    chartChildControl:'Parental time control', chartCoPlay:'Play together with children', chartChildAttitude:'Parents’ attitude to child’s gaming',
-    chartReasons:'Why people don’t play', chartWantStart:'Non-gamers: would like to start',
-    chartMotives:'Motives to start playing', chartStopMotives:'Reasons to stop', chartSkills:'Skills from games — agreement', chartLeisure:'Free-time activities',
-    corrPickA:'First variable', corrPickB:'Second variable', corrResult:'Result', corrCoef:'Correlation coefficient',
-    corrN:'pairs used', corrExp:'How to read: values from −1 to 1. Near 0 — no association; the further from 0, the stronger. Correlation is not causation.',
-    topAgree:'Most supported statements (click for correlations)',
-    genderStereotypes:'Gender stereotypes about gamers',
-    attVsX:'Agreement by group',
-    resonTitle:'Findings that made headlines',
-    methodTitle:'Methodology',
-    methodText:'Survey by NAFI for RVI and IFSI (fieldwork October 2025). Sample: 4,932 respondents aged 14+, weighted by sex, age, region and locality size. This dashboard is an unofficial interactive tool built on open microdata — please cite the official study.',
-    agreeShort:'Agree',
-    ofGamers:'of gamers',
-    ofNonGamers:'of non-gamers',
-    ofPayers:'of payers',
-    ofPCconsole:'of PC/console gamers',
-    ofParents:'of parents of 7–14s',
-    ofAnswered:'of respondents',
-    resCardT1:'Every third adult plays daily',
-    resCardD1:'The share of adults gaming daily grew from 23% (2022) to 34% (2025). Filter by 18–24 above — daily gaming is already the norm for the young.',
-    resCardT2:'The phone is the main platform',
-    resCardD2:'Phones dominate Russian gaming; PC is second, consoles remain niche (~11% of gamers).',
-    resCardT3:'“Women don’t play” is a myth — yet stereotypes persist',
-    resCardD3:'Women are a large share of the audience, yet many respondents still agree with stereotypes like “girls play to attract men” and “women prefer simpler games”. Open the Attitudes section and click a statement to see who agrees.',
-    resCardT4:'Piracy and workarounds',
-    resCardD4:'A notable share of gamers download torrents and use foreign accounts to pay — a direct consequence of payment-service restrictions. Many say they would pay if it were convenient.',
-    resCardT5:'Volgograd — the gaming capital',
-    resCardD5:'Among million+ cities, Volgograd leads in the share of gamers (83%). Verify it yourself with the city filter.',
-    resCardT6:'Parents play with their kids',
-    resCardD6:'Most parents of 7–14-year-olds feel positive or neutral about their child’s gaming and stay involved: they follow achievements and control playtime.',
-    linkOfficial:'gaminginrussia.forgamedev.ru — official study website (Gaming in Russia 2026)',
-    footText:'This dashboard is built on study microdata. For the source and the full report see the official website:',
-    vsAll:'vs all respondents',
-    groupDiff:'difference vs overall base, pp',
-    loading:'Loading…',
-    chartSources:'Information sources',
-    chartHobbies:'Digital hobbies',
-    chartVideo:'Watch gaming videos',
-    chartSelfId:'Identify as a gamer',
-  }
+var L={
+ ru:{mark:'ВО',whoName:'Василий Овчинников',whoRole:'публичные проекты',
+     heroT:'Дашборды и данные — <span class="b">в открытом доступе</span>',
+     heroP:'Интерактивные веб-приложения на данных исследований: всё считается прямо в браузере, ничего устанавливать не нужно.',
+     sec:'Проекты',open:'Открыть',soon:'Здесь будут появляться новые проекты.',
+     ftG:'Исходники на GitHub →',
+     dT:'Гейминг в России 2026',dSub:'Gaming in Russia 2026',
+     dP:'Интерактивный дашборд социологического исследования РВИ × НАФИ × ИФСИ: 4 932 респондента, 42 графика, живые фильтры и корреляции. Русский и английский.',
+     tags:['Социология','4 932 респондента','42 графика','RU / EN']},
+ en:{mark:'VO',whoName:'Vasily Ovchinnikov',whoRole:'public projects',
+     heroT:'Dashboards and data — <span class="b">out in the open</span>',
+     heroP:'Interactive web apps built on research data: everything runs right in your browser, nothing to install.',
+     sec:'Projects',open:'Open',soon:'New projects will appear here.',
+     ftG:'Source code on GitHub →',
+     dT:'Gaming in Russia 2026',dSub:'Гейминг в России 2026',
+     dP:'Interactive dashboard of the RVI × NAFI × IFSI survey: 4,932 respondents, 42 charts, live filters and correlations. Russian and English.',
+     tags:['Survey data','4,932 respondents','42 charts','RU / EN']}
 };
-
-let LANG='ru';
-const T=k=>I18N[LANG][k]??k;
-
-/* ============ data ============ */
-const D=window.DATA, R=D.records, N=R._w.length;
-const dicts=D.dicts, mdicts=D.mdicts;
-
-/* i18n label helper: (langIndex) */
-const li=()=>LANG==='ru'?0:1;
-const lab=(dict,code)=>dict[code]?dict[code][li()]:code;
-const mlab=(dictset,tag)=>mdicts[dictset][tag]?mdicts[dictset][tag][li()]:tag;
-
-/* ============ filters ============ */
-const F={sex:'',age:'',city:'',fo:'',gamer:''};
-let IDX=[...Array(N).keys()]; // filtered index
-let GAMERIDX=[]; // gamers subset of IDX
-
-function applyFilters(){
-  IDX=[];
-  for(let i=0;i<N;i++){
-    if(F.sex && R.sex[i]!==F.sex) continue;
-    if(F.age && R.age[i]!==F.age) continue;
-    if(F.city && R.mil[i]!==F.city) continue;
-    if(F.fo && R.fo[i]!==F.fo) continue;
-    if(F.gamer && R.gamer[i]!==F.gamer) continue;
-    IDX.push(i);
-  }
-  GAMERIDX=IDX.filter(i=>R.gamer[i]==='gamer');
-}
-
-/* weighted computations */
-const W=(i)=>R._w[i];
-function wsum(idx){let s=0;for(const i of idx)s+=W(i);return s;}
-function wshareOf(idx,pred){ // weighted % of idx matching pred
-  let a=0,b=0;
-  for(const i of idx){const w=W(i);b+=w;if(pred(i))a+=w;}
-  return b?a/b*100:0;
-}
-function wmean(idx,get){ // weighted mean of get(i) ignoring null
-  let a=0,b=0;
-  for(const i of idx){const v=get(i);if(v==null)continue;const w=W(i);a+=v*w;b+=w;}
-  return b?a/b:null;
-}
-function wmedian(idx,get){
-  const arr=[];
-  for(const i of idx){const v=get(i);if(v==null)continue;const w=W(i);arr.push([v,w]);}
-  if(!arr.length)return null;
-  arr.sort((a,b)=>a[0]-b[0]);
-  const tot=arr.reduce((s,x)=>s+x[1],0);let acc=0;
-  for(const [v,w] of arr){acc+=w;if(acc>=tot/2)return v;}
-  return arr[arr.length-1][0];
-}
-
-/* single-choice distribution (weighted) */
-function distSingle(key,idx,base){
-  const b=base||idx, d=dicts[key], order=Object.keys(d);
-  const counts={};for(const k of order)counts[k]=0;
-  let tot=0;
-  for(const i of b){const v=R[key][i];if(v!=null&&counts[v]!==undefined){counts[v]+=W(i);tot+=W(i);}}
-  return order.filter(k=>counts[k]>0).map(k=>({name:lab(d,k),code:k,pct:tot?counts[k]/tot*100:0,n:counts[k]}));
-}
-/* multi-select distribution (weighted % of base) */
-function distMulti(recKey,tagList,dictKey,idx,base){
-  const b=base||idx;
-  const counts={};for(const t of tagList)counts[t]=0;
-  let tot=0;
-  for(const i of b){tot+=W(i);for(const t of R[recKey][i])if(counts[t]!==undefined)counts[t]+=W(i);}
-  return tagList.filter(t=>counts[t]>0)
-    .map(t=>({name:mlab(dictKey,t),code:t,pct:tot?counts[t]/tot*100:0,n:counts[t]}))
-    .sort((a,b2)=>b2.pct-a.pct);
-}
-
-/* ============ charts registry ============ */
-const CHARTS={}; // id -> {el, chart, builder}
-function regChart(id,builder){
-  const el=document.getElementById(id);
-  if(!el)return;
-  if(!CHARTS[id]){CHARTS[id]={el,chart:echarts.init(el),builder};}
-  else CHARTS[id].builder=builder;
-  const c=CHARTS[id].chart;
-  c.clear();
-  const opt=builder();
-  if(opt)c.setOption(opt,true);
-}
-
-const baseFont={color:'#8b96a5',fontSize:11.5};
-const tooltipStyle={backgroundColor:'#1c232e',borderColor:'#2b3a55',textStyle:{color:'#e8ecf1',fontSize:13}};
-const PALETTE=['#4f8cff','#22c55e','#fbbf24','#f472b6','#a78bfa','#34d399','#f87171','#60a5fa','#facc15','#2dd4bf','#fb923c','#c084fc'];
-
-function hbar(id,rows,unit='%'){
-  const data=rows.map(r=>({name:r.name,value:+r.pct.toFixed(1),n:r.n}));
-  regChart(id,()=>({
-    grid:{left:8,right:44,top:6,bottom:6,containLabel:true},
-    tooltip:{...tooltipStyle,formatter:p=>`${p.name}<br/><b>${p.value}${unit}</b> · n=${Math.round(p.data.n||0)}`},
-    xAxis:{type:'value',axisLabel:{...baseFont,formatter:'{value}%'},splitLine:{lineStyle:{color:'#222b38'}}},
-    yAxis:{type:'category',data:data.map(d=>d.name).reverse(),axisLabel:{color:'#c6cfdb',fontSize:12},axisLine:{show:false},axisTick:{show:false}},
-    series:[{type:'bar',data:data.map(d=>d.value).reverse(),itemStyle:{color:new echarts.graphic.LinearGradient(0,0,1,0,[{offset:0,color:'#2d5fc2'},{offset:1,color:'#4f8cff'}]),borderRadius:[0,3,3,0]},barMaxWidth:18,label:{show:true,position:'right',color:'#8b96a5',fontSize:11,formatter:'{c}%'}}]
-  }));
-}
-function hbarSplit(id,rowsA,rowsB,nameA,nameB){
-  const cats=rowsA.map(r=>r.name);
-  regChart(id,()=>({
-    grid:{left:8,right:60,top:30,bottom:6,containLabel:true},
-    legend:{top:0,textStyle:{color:'#8b96a5',fontSize:12}},
-    tooltip:{...tooltipStyle,formatter:ps=>{const t=ps[0];return `${t.name}<br/>${nameA}: <b>${ps[0].value}%</b><br/>${nameB}: <b>${ps[1].value}%</b>`}},
-    xAxis:{type:'value',axisLabel:{...baseFont,formatter:'{value}%'},splitLine:{lineStyle:{color:'#222b38'}}},
-    yAxis:{type:'category',data:cats.slice().reverse(),axisLabel:{color:'#c6cfdb',fontSize:12},axisLine:{show:false}},
-    series:[
-      {name:nameA,type:'bar',data:rowsA.map(r=>+(r.pct).toFixed(1)).reverse(),itemStyle:{color:'#4f8cff',borderRadius:[0,3,3,0]},barMaxWidth:14},
-      {name:nameB,type:'bar',data:rowsB.map(r=>+(r.pct).toFixed(1)).reverse(),itemStyle:{color:'#f472b6',borderRadius:[0,3,3,0]},barMaxWidth:14},
-    ]
-  }));
-}
-function vbar(id,rows){
-  regChart(id,()=>({
-    grid:{left:8,right:8,top:24,bottom:30,containLabel:true},
-    tooltip:{...tooltipStyle,formatter:p=>`${p.name}: <b>${p.value}%</b>`},
-    xAxis:{type:'category',data:rows.map(r=>r.name),axisLabel:{color:'#c6cfdb',fontSize:11,interval:0,rotate:rows.length>5?28:0},axisLine:{lineStyle:{color:'#2b3a55'}}},
-    yAxis:{type:'value',axisLabel:{...baseFont,formatter:'{value}%'},splitLine:{lineStyle:{color:'#222b38'}}},
-    series:[{type:'bar',data:rows.map((r,ix)=>({value:+r.pct.toFixed(1),itemStyle:{color:PALETTE[ix%PALETTE.length]}})),barMaxWidth:42}]
-  }));
-}
-function pieOrBar(id,rows){
-  if(rows.length<=6){
-    regChart(id,()=>({
-      tooltip:{...tooltipStyle,formatter:p=>`${p.name}: <b>${p.value}%</b>`},
-      series:[{type:'pie',radius:['42%','70%'],center:['50%','50%'],data:rows.map((r,ix)=>({name:r.name,value:+r.pct.toFixed(1),itemStyle:{color:PALETTE[ix%PALETTE.length]}})),label:{color:'#c6cfdb',fontSize:12,formatter:'{b}\n{c}%'},labelLine:{lineStyle:{color:'#2b3a55'}}}]
-    }));
-  } else hbar(id,rows);
-}
-
-/* ============ section definitions ============ */
-function renderNav(){
-  const secs=[['overview','secOverview'],['habits','secHabits'],['money','secMoney'],['attitudes','secAttitudes'],['resonance','secResonance'],['children','secChildren'],['esports','secEsports'],['nongamers','secNonGamers'],['corr','secCorr']];
-  const nav=document.getElementById('nav');
-  nav.innerHTML=secs.map(([id,k])=>`<a href="#sec-${id}" data-nav>${T(k)}</a>`).join('');
-}
-function cardHtml(id,titleKey,baseKey,cls=''){
-  return `<div class="card"><h3>${T(titleKey)}</h3><div class="base" id="base-${id}"></div><div class="chart ${cls}" id="ch-${id}"></div></div>`;
-}
-function secHtml(id,titleKey,descKey,inner){
-  return `<section id="sec-${id}"><h2><span class="num">§</span>${T(titleKey)}</h2><p class="secdesc">${T(descKey)}</p>${inner}</section>`;
-}
-
-/* build static skeleton */
-function buildSkeleton(){
-  const S=document.getElementById('sections');
-  let html='';
-
-  // ---- overview
-  html+=secHtml('overview','secOverview','secOverviewD',`
-    <div class="grid g2">
-      ${cardHtml('sex','chartSex')}${cardHtml('age','chartAge')}
-      ${cardHtml('freq','chartFreq')}${cardHtml('trend','chartTrend')}
-      ${cardHtml('devices','chartDevices','')}
-      ${cardHtml('maindev','chartMainDev')}
-    </div>`);
-
-  // ---- habits
-  html+=secHtml('habits','secHabits','secHabitsD',`
-    <div class="grid g2">
-      ${cardHtml('session','chartSession')}${cardHtml('hours','chartHours')}
-      ${cardHtml('format','chartFormat')}${cardHtml('selfid','chartSelfId')}
-      ${cardHtml('leisure','chartLeisure')}
-      ${cardHtml('video','chartVideo')}
-    </div>
-    <div class="grid g3" style="margin-top:14px">
-      ${cardHtml('genres','chartGenres')}${cardHtml('genresM','chartGenresM')}${cardHtml('genresC','chartGenresC')}
-    </div>
-    <div class="grid g2" style="margin-top:14px">
-      ${cardHtml('games','chartGames','','tall')}
-      ${cardHtml('ru','chartRuKnow')}
-    </div>`);
-
-  // ---- money
-  html+=secHtml('money','secMoney','secMoneyD',`
-    <div class="grid g2">
-      ${cardHtml('buy','chartBuy')}${cardHtml('spend','chartSpend')}
-      ${cardHtml('ways','chartWays')}${cardHtml('stores','chartStores')}
-      ${cardHtml('paydiff','chartPayDiff')}${cardHtml('wouldbuy','chartWouldBuy')}
-      ${cardHtml('foreign','chartForeign')}${cardHtml('pirate','chartPirate')}
-    </div>`);
-
-  // ---- attitudes (built dynamically)
-  html+=`<section id="sec-attitudes"><h2><span class="num">§</span>${T('secAttitudes')}</h2><p class="secdesc">${T('secAttitudesD')}</p>
-    <div class="grid g2">
-      <div class="card"><h3>${T('topAgree')}</h3><div class="base" id="base-att"></div><div id="attList"></div></div>
-      <div class="card"><h3 id="attDetailTitle">${T('attVsX')}</h3><div class="chart" id="ch-attdetail" style="height:520px"></div></div>
-    </div>
-    <div class="card" style="margin-top:14px"><h3>${T('genderStereotypes')}</h3><div class="chart" id="ch-genderatt"></div></div>
-  </section>`;
-
-  // ---- resonance
-  const cards=[1,2,3,4,5,6].map(i=>`<div class="callout"><div class="t">${T('resCardT'+i)}</div><p>${T('resCardD'+i)}</p></div>`).join('');
-  html+=secHtml('resonance','secResonance','secResonanceD',`<div class="grid g2">${cards}</div>`);
-
-  // ---- children
-  html+=secHtml('children','secChildren','secChildrenD',`
-    <div class="grid g2">
-      ${cardHtml('childplays','chartChildPlays')}${cardHtml('childgames','chartChildGames')}
-      ${cardHtml('childtime','chartChildTime')}${cardHtml('childcontrol','chartChildControl')}
-      ${cardHtml('coplay','chartCoPlay')}${cardHtml('childatt','chartChildAttitude')}
-    </div>`);
-
-  // ---- esports
-  html+=secHtml('esports','secEsports','secEsportsD',`
-    <div class="grid g2">
-      ${cardHtml('esportsknow','chartEsportsKnow')}${cardHtml('esportsdef','chartEsportsDef')}
-      ${cardHtml('jobs','chartJobs')}${cardHtml('community','chartCommunity')}
-      ${cardHtml('commplat','chartCommPlat')}${cardHtml('motives','chartMotives')}
-    </div>`);
-
-  // ---- non-gamers
-  html+=secHtml('nongamers','secNonGamers','secNonGamersD',`
-    <div class="grid g2">
-      ${cardHtml('reasons','chartReasons')}${cardHtml('wantstart','chartWantStart')}
-    </div>`);
-
-  // ---- correlations
-  html+=secHtml('corr','secCorr','secCorrD',`
-    <div class="corr-note">${T('corrExp')}</div>
-    <div class="card">
-      <div class="frow" style="gap:20px">
-        <div class="fgroup"><label>${T('corrPickA')}</label><select id="corrA"></select></div>
-        <div class="fgroup"><label>${T('corrPickB')}</label><select id="corrB"></select></div>
-      </div>
-      <div class="corrresult" id="corrResult"></div>
-      <div class="chart tall" id="ch-corr"></div>
-    </div>`);
-
-  S.innerHTML=html;
-}
-
-/* ============ KPIs ============ */
-function renderKPIs(){
-  const total=wsum(IDX);
-  const gamers=GAMERIDX.length?wshareOf(IDX,i=>R.gamer[i]==='gamer'):0;
-  const daily=wshareOf(IDX,i=>R.gamer[i]==='gamer'&&R.freq[i]==='daily');
-  const hours=wmean(GAMERIDX,i=>R.hours[i]);
-  const payers=IDX.filter(i=>R.buy[i]==='bought');
-  const med=wmedian(payers,i=>R.spend[i]);
-  const kpis=[
-    [gamers.toFixed(1)+'%',T('kpiGamers')],
-    [daily.toFixed(1)+'%',T('kpiDaily')],
-    [hours!=null?hours.toFixed(1):'—',T('kpiHours')],
-    [med!=null?Math.round(med).toLocaleString('ru-RU')+' ₽':'—',T('kpiSpend')],
-  ];
-  document.getElementById('kpis').innerHTML=kpis.map(([v,l])=>`<div class="kpi"><div class="v">${v}</div><div class="l">${l}</div></div>`).join('');
-  const gamersW=wshareOf(IDX,i=>R.gamer[i]==='gamer');
-  document.getElementById('fbase').innerHTML=T('base').replace('%n',IDX.length.toLocaleString()).replace('%w',Math.round(total).toLocaleString())+' · '+T('baseG').replace('%g',gamersW.toFixed(1)+'%');
-}
-
-/* ============ chart builders per section ============ */
-function setBase(id,text){const el=document.getElementById('base-'+id);if(el)el.innerHTML=text;}
-const BASES={
-  gamers:()=>`<b>${T('ofGamers')}</b> · n=${Math.round(wsum(GAMERIDX)).toLocaleString()}`,
-  answered:()=>`<b>${T('ofAnswered')}</b> · n=${Math.round(wsum(IDX)).toLocaleString()}`,
-  all:()=>`<b>${T('ofAnswered')}</b> · n=${Math.round(wsum(IDX)).toLocaleString()}`,
-  payers:()=>`<b>${T('ofPayers')}</b> · n=${Math.round(wsum(IDX.filter(i=>R.buy[i]==='bought'))).toLocaleString()}`,
-  pccc:()=>`<b>${T('ofPCconsole')}</b> · n=${Math.round(wsum(GAMERIDX.filter(i=>R.devices[i].includes('pc')||R.devices[i].includes('console')||R.devices[i].includes('handheld')))).toLocaleString()}`,
-  parents:()=>`<b>${T('ofParents')}</b> · n=${Math.round(wsum(IDX.filter(i=>R.child_plays[i]!=null||R.child_time[i]!=null))).toLocaleString()}`,
-};
-
-function renderCharts(){
-  /* overview */
-  const sexRows=distSingle('gamer',IDX,IDX.filter(i=>R.sex[i])); // gamers by sex
-  // better: two bars: male gamers%, female gamers%
-  const maleIdx=IDX.filter(i=>R.sex[i]==='m'),femIdx=IDX.filter(i=>R.sex[i]==='f');
-  hbarSplit('ch-sex',
-    [{name:lab(dicts.sex,'m'),pct:wshareOf(maleIdx,i=>R.gamer[i]==='gamer')},{name:lab(dicts.sex,'f'),pct:wshareOf(femIdx,i=>R.gamer[i]==='gamer')}],
-    [],lab(dicts.sex,'m'),lab(dicts.sex,'f'));
-  // fallback: use custom — simpler: single bars
-  regChart('ch-sex',()=>({
-    grid:{left:8,right:56,top:8,bottom:6,containLabel:true},
-    tooltip:{...tooltipStyle,formatter:p=>`${p.name}: <b>${p.value}%</b>`},
-    xAxis:{type:'value',axisLabel:{...baseFont,formatter:'{value}%'},splitLine:{lineStyle:{color:'#222b38'}}},
-    yAxis:{type:'category',data:[lab(dicts.sex,'f'),lab(dicts.sex,'m')],axisLabel:{color:'#c6cfdb',fontSize:13},axisLine:{show:false}},
-    series:[{type:'bar',data:[{value:+wshareOf(femIdx,i=>R.gamer[i]==='gamer').toFixed(1),itemStyle:{color:'#f472b6'}},{value:+wshareOf(maleIdx,i=>R.gamer[i]==='gamer').toFixed(1),itemStyle:{color:'#4f8cff'}}],barMaxWidth:26,label:{show:true,position:'right',color:'#8b96a5',formatter:'{c}%'}}]
-  }));
-  const ageOrder=['14-17','18-24','25-34','35-44','45-54','55+'];
-  const ageRows=ageOrder.map(a=>{
-    const sub=IDX.filter(i=>R.age[i]===a);
-    return {name:lab(dicts.age,a),pct:wshareOf(sub,i=>R.gamer[i]==='gamer'),n:sub.length};
-  });
-  vbar('ch-age',ageRows);
-  setBase('age',BASES.answered());
-
-  const frRows=distSingle('freq',IDX,GAMERIDX);
-  pieOrBar('ch-freq',frRows); setBase('freq',BASES.gamers());
-
-  const trendRows=distSingle('trend',IDX,GAMERIDX.filter(i=>R.trend[i]));
-  pieOrBar('ch-trend',trendRows); setBase('trend',BASES.gamers());
-
-  const devRows=distMulti('devices',['pc','mobile','console','handheld'],'devices',IDX,GAMERIDX);
-  hbar('ch-devices',devRows); setBase('devices',BASES.gamers());
-
-  const mdRows=distSingle('maindev',IDX,GAMERIDX.filter(i=>R.maindev[i]));
-  pieOrBar('ch-maindev',mdRows); setBase('maindev',BASES.gamers());
-
-  /* habits */
-  const sessRows=distSingle('session',IDX,GAMERIDX.filter(i=>R.session[i]));
-  pieOrBar('ch-session',sessRows); setBase('session',BASES.gamers());
-  const whRows=distSingle('wkhours',IDX,GAMERIDX.filter(i=>R.wkhours[i]));
-  vbar('ch-hours',whRows); setBase('hours',BASES.gamers());
-  const fmtRows=distSingle('format',IDX,GAMERIDX.filter(i=>R.format[i]));
-  pieOrBar('ch-format',fmtRows); setBase('format',BASES.gamers());
-  const siRows=distSingle('selfid',IDX,GAMERIDX.filter(i=>R.selfid[i]));
-  pieOrBar('ch-selfid',siRows); setBase('selfid',BASES.gamers());
-  const leiTags=Object.keys(mdicts.leisure);
-  // leisure is a frequency scale — stacked bar: often/sometimes/rarely/never
-  const leiRows=[];
-  for(const t of leiTags){
-    const cnt={often:0,sometimes:0,rarely:0,never:0};
-    let tot=0;
-    for(const i of IDX){
-      const d=R.leisure[i];
-      if(!d||d[t]==null)continue;
-      const w=W(i);tot+=w;cnt[d[t]]+=w;
-    }
-    if(tot>0)leiRows.push({name:mlab('leisure',t),code:t,pct:tot?cnt.often/tot*100:0,sometimes:cnt.sometimes/tot*100,rarely:cnt.rarely/tot*100,never:cnt.never/tot*100,n:tot});
-  }
-  leiRows.sort((a,b)=>b.pct-a.pct);
-  const leiFreq=(key)=>({
-    grid:{left:8,right:10,top:30,bottom:44,containLabel:true},
-    legend:{top:0,textStyle:{color:'#8b96a5',fontSize:12}},
-    tooltip:{...tooltipStyle,formatter:ps=>{const n=ps[0].name;const r=leiRows.find(x=>x.name===n);return `${n}<br/>${ps.map(p=>`${p.marker}${p.seriesName}: <b>${p.value}%</b>`).join('<br/>')}`}},
-    xAxis:{type:'category',data:leiRows.map(r=>r.name),axisLabel:{color:'#c6cfdb',fontSize:10.5,interval:0,rotate:38},axisLine:{lineStyle:{color:'#2b3a55'}}},
-    yAxis:{type:'value',axisLabel:{...baseFont,formatter:'{value}%'},splitLine:{lineStyle:{color:'#222b38'}}},
-    series:[
-      {name:LANG==='ru'?'Часто':'Often',type:'bar',stack:'f',data:leiRows.map(r=>+r.pct.toFixed(1)),itemStyle:{color:'#4f8cff'},barMaxWidth:26},
-      {name:LANG==='ru'?'Иногда':'Sometimes',type:'bar',stack:'f',data:leiRows.map(r=>+r.sometimes.toFixed(1)),itemStyle:{color:'#22c55e'},barMaxWidth:26},
-      {name:LANG==='ru'?'Редко':'Rarely',type:'bar',stack:'f',data:leiRows.map(r=>+r.rarely.toFixed(1)),itemStyle:{color:'#fbbf24'},barMaxWidth:26},
-      {name:LANG==='ru'?'Никогда':'Never',type:'bar',stack:'f',data:leiRows.map(r=>+r.never.toFixed(1)),itemStyle:{color:'#33415c'},barMaxWidth:26},
-    ]
-  });
-  regChart('ch-leisure',leiFreq); setBase('leisure',BASES.answered());
-  const vidRows=distSingle('videos',IDX,GAMERIDX.filter(i=>R.videos[i]));
-  pieOrBar('ch-video',vidRows); setBase('video',BASES.gamers());
-
-  // genres per device: base = gamers who named ≥1 genre on that device
-  for(const [id,key,mkey] of [['genres','genres_pc','genres_pc'],['genresM','genres_mobile','genres_mobile'],['genresC','genres_console','genres_console']]){
-    const base=GAMERIDX.filter(i=>R[key][i].length>0);
-    const tags=Object.keys(mdicts[mkey]);
-    hbar('ch-'+id,distMulti(key,tags,mkey,IDX,base));
-    setBase(id,`${T('ofAnswered')} · n=${Math.round(wsum(base)).toLocaleString()}`);
-  }
-
-  // top games
-  const gameBase=GAMERIDX;
-  const gc={};
-  for(const i of gameBase){const w=W(i);for(const g of R.games[i])gc[g]=(gc[g]||0)+w;}
-  const gameRows=Object.entries(gc).map(([g,v])=>({name:D.gameLabels[g]?D.gameLabels[g][li()]:g,pct:v/wsum(gameBase)*100,n:v}))
-    .sort((a,b)=>b.pct-a.pct).slice(0,25);
-  hbar('ch-games',gameRows); setBase('games',BASES.gamers());
-
-  // russian games
-  const ruSeries=['ru_know','ru_play','ru_want'];
-  const ruNames={ru_know:T('ofAnswered'),ru_play:'',ru_want:''};
-  const ruKnow={};
-  for(const i of GAMERIDX){const w=W(i);for(const g of R.ru_know[i])ruKnow[g]=(ruKnow[g]||0)+w;}
-  const ruPlayC={},ruWantC={};
-  for(const i of GAMERIDX){const w=W(i);for(const g of R.ru_play[i])ruPlayC[g]=(ruPlayC[g]||0)+w;for(const g of R.ru_want[i])ruWantC[g]=(ruWantC[g]||0)+w;}
-  const gsum=wsum(GAMERIDX);
-  const ruRows=Object.keys(ruKnow).map(g=>({
-    name:D.ruLabels[g]?D.ruLabels[g][li()]:g,
-    know:ruKnow[g]/gsum*100, play:(ruPlayC[g]||0)/gsum*100, want:(ruWantC[g]||0)/gsum*100
-  })).sort((a,b)=>b.know-a.know).slice(0,16);
-  regChart('ch-ru',()=>({
-    grid:{left:8,right:10,top:34,bottom:40,containLabel:true},
-    legend:{top:0,textStyle:{color:'#8b96a5'}},
-    tooltip:{...tooltipStyle,formatter:ps=>{const n=ps[0].name;const r=ruRows.find(x=>x.name===n);return `${n}<br/>${T('chartRuKnow').split(':')[0]}: <b>${r.know.toFixed(1)}%</b><br/>${T('chartRuKnow').split('/')[1]||''}: <b>${r.play.toFixed(1)}%</b>`}},
-    xAxis:{type:'category',data:ruRows.map(r=>r.name),axisLabel:{color:'#c6cfdb',fontSize:10,interval:0,rotate:40},axisLine:{lineStyle:{color:'#2b3a55'}}},
-    yAxis:{type:'value',axisLabel:{...baseFont,formatter:'{value}%'},splitLine:{lineStyle:{color:'#222b38'}}},
-    series:[
-      {name:LANG==='ru'?'Знают':'Aware',type:'bar',data:ruRows.map(r=>+r.know.toFixed(1)),itemStyle:{color:'#4f8cff'},barMaxWidth:18},
-      {name:LANG==='ru'?'Играют':'Play',type:'bar',data:ruRows.map(r=>+r.play.toFixed(1)),itemStyle:{color:'#22c55e'},barMaxWidth:18},
-      {name:LANG==='ru'?'Хотят':'Want',type:'bar',data:ruRows.map(r=>+r.want.toFixed(1)),itemStyle:{color:'#fbbf24'},barMaxWidth:18},
-    ]
-  }));
-  setBase('ru',BASES.gamers());
-
-  /* money */
-  const buyRows=distMulti('purchases',Object.keys(mdicts.purchases),'purchases',IDX,GAMERIDX);
-  hbar('ch-buy',buyRows); setBase('buy',BASES.gamers());
-  // spend distribution: among payers, total spend
-  const payers=IDX.filter(i=>R.buy[i]==='bought');
-  const bins=[[0,1000,'< 1 000'],[1000,3000,'1–3 тыс.'],[3000,5000,'3–5 тыс.'],[5000,8000,'5–8 тыс.'],[8000,10000,'8–10 тыс.'],[10000,20000,'10–20 тыс.'],[20000,1e9,'> 20 тыс.']];
-  const binNamesRu=['< 1 000 ₽','1–3 тыс. ₽','3–5 тыс. ₽','5–8 тыс. ₽','8–10 тыс. ₽','10–20 тыс. ₽','> 20 тыс. ₽'];
-  const binNamesEn=['< ₽1k','₽1–3k','₽3–5k','₽5–8k','₽8–10k','₽10–20k','> ₽20k'];
-  const spendRows=bins.map((b,ix)=>{
-    let a=0,b2=0;
-    for(const i of payers){const v=R.spend[i];const w=W(i);if(v==null)continue;b2+=w;if(v>=b[0]&&v<b[1])a+=w;}
-    return {name:(LANG==='ru'?binNamesRu:binNamesEn)[ix],pct:b2?a/b2*100:0,n:a};
-  });
-  vbar('ch-spend',spendRows); setBase('spend',BASES.payers());
-  const waysRows=distMulti('buy_ways',Object.keys(mdicts.buy_ways),'buy_ways',IDX,IDX.filter(i=>R.buy_ways[i].length>0));
-  hbar('ch-ways',waysRows);
-  setBase('ways',`<b>${T('ofAnswered')}</b> · n=${Math.round(wsum(IDX.filter(i=>R.buy_ways[i].length>0))).toLocaleString()}`);
-  const storeRows=distMulti('stores',Object.keys(mdicts.stores),'stores',IDX,IDX.filter(i=>R.stores[i].length>0));
-  hbar('ch-stores',storeRows);
-  setBase('stores',`<b>${T('chartStoresNote')}</b> · n=${Math.round(wsum(IDX.filter(i=>R.stores[i].length>0))).toLocaleString()}`);
-  const pdBase=IDX.filter(i=>R.pay_trouble[i]!=null&&R.buy[i]==='bought');
-  const pdRows=distMulti('pay_diffs',Object.keys(mdicts.pay_diffs),'pay_diffs',IDX,pdBase.filter(i=>R.pay_trouble[i]==='yes'));
-  hbar('ch-paydiff',pdRows);
-  setBase('paydiff',`${T('ofPayers')} · n=${Math.round(wsum(pdBase.filter(i=>R.pay_trouble[i]==='yes'))).toLocaleString()}`);
-  const wbRows=distSingle('would_buy_if_easy',IDX,IDX.filter(i=>R.would_buy_if_easy[i]!=null));
-  pieOrBar('ch-wouldbuy',wbRows);
-  setBase('wouldbuy',`${T('ofAnswered')} · n=${Math.round(wsum(IDX.filter(i=>R.would_buy_if_easy[i]!=null))).toLocaleString()}`);
-  const pccBase=GAMERIDX.filter(i=>R.devices[i].includes('pc')||R.devices[i].includes('console')||R.devices[i].includes('handheld'));
-  const fRows=distSingle('foreign_acc',IDX,pccBase.filter(i=>R.foreign_acc[i]!=null));
-  pieOrBar('ch-foreign',fRows); setBase('foreign',BASES.pccc());
-  const torr=distMulti('buy_ways',['torrent'],'buy_ways',IDX,IDX.filter(i=>R.buy_ways[i].length>0));
-  const torrPct=torr.length?torr[0].pct:0;
-  // piracy among gamers who named any way
-  regChart('ch-pirate',()=>({
-    tooltip:{...tooltipStyle,formatter:p=>`${p.name}: <b>${p.value}%</b>`},
-    series:[{type:'pie',radius:['45%','72%'],data:[
-      {name:LANG==='ru'?'Скачивают с торрентов':'Torrent downloads',value:+torrPct.toFixed(1),itemStyle:{color:'#f87171'}},
-      {name:LANG==='ru'?'Не скачивают':'No torrents',value:+(100-torrPct).toFixed(1),itemStyle:{color:'#2b3a55'}}],
-      label:{color:'#c6cfdb',fontSize:12,formatter:'{b}\n{c}%'}}]
-  }))
-  setBase('pirate',`${T('ofAnswered')} · n=${Math.round(wsum(IDX.filter(i=>R.buy_ways[i].length>0))).toLocaleString()}`);
-
-  /* attitudes */
-  renderAttitudes();
-  renderGenderAtt();
-
-  /* children */
-  const parents=IDX.filter(i=>R.child_plays[i]!=null);
-  const cpRows=distSingle('child_plays',IDX,parents);
-  pieOrBar('ch-childplays',cpRows); setBase('childplays',BASES.parents());
-  const cgBase=IDX.filter(i=>R.child_plays[i]==='plays');
-  const cgRows=distMulti('child_games',Object.keys(mdicts.child_games),'child_games',IDX,cgBase);
-  hbar('ch-childgames',cgRows); setBase('childgames',BASES.parents());
-  const ctRows=distSingle('child_time',IDX,cgBase.filter(i=>R.child_time[i]));
-  pieOrBar('ch-childtime',ctRows); setBase('childtime',BASES.parents());
-  const ccRows=distSingle('child_control',IDX,cgBase.filter(i=>R.child_control[i]));
-  pieOrBar('ch-childcontrol',ccRows); setBase('childcontrol',BASES.parents());
-  const copRows=distSingle('play_with_child',IDX,cgBase.filter(i=>R.play_with_child[i]));
-  pieOrBar('ch-coplay',copRows); setBase('coplay',BASES.parents());
-  const caRows=distSingle('child_attitude',IDX,cgBase.filter(i=>R.child_attitude[i]));
-  pieOrBar('ch-childatt',caRows); setBase('childatt',BASES.parents());
-
-  /* esports */
-  const ekRows=distSingle('esports_aware',IDX,IDX.filter(i=>R.esports_aware[i]));
-  hbar('ch-esportsknow',ekRows); setBase('esportsknow',BASES.answered());
-  const edRows=distSingle('esports_def',IDX,IDX.filter(i=>R.esports_def[i]));
-  pieOrBar('ch-esportsdef',edRows); setBase('esportsdef',BASES.answered());
-  const jobRows=distMulti('esports_jobs',Object.keys(mdicts.esports_jobs),'esports_jobs',IDX,IDX.filter(i=>R.esports_jobs[i].length>0));
-  hbar('ch-jobs',jobRows); setBase('jobs',BASES.answered());
-  const comRows=distSingle('community',IDX,GAMERIDX.filter(i=>R.community[i]));
-  pieOrBar('ch-community',comRows); setBase('community',BASES.gamers());
-  const cpBase=GAMERIDX.filter(i=>R.comm_platforms[i].length>0);
-  const cppRows=distMulti('comm_platforms',Object.keys(mdicts.comm_platforms),'comm_platforms',IDX,cpBase);
-  hbar('ch-commplat',cppRows); setBase('commplat',BASES.gamers());
-  const moRows=distMulti('start_motives',Object.keys(mdicts.start_motives).filter(t=>t!=='other'&&t!=='na'),'start_motives',IDX,GAMERIDX);
-  hbar('ch-motives',moRows); setBase('motives',BASES.gamers());
-
-  /* non-gamers */
-  const ng=IDX.filter(i=>R.gamer[i]==='nongamer');
-  const rRows=distMulti('notgaming_reasons',Object.keys(mdicts.notgaming_reasons).filter(t=>t!=='other'&&t!=='na'),'notgaming_reasons',IDX,ng);
-  hbar('ch-reasons',rRows); setBase('reasons',`<b>${T('ofNonGamers')}</b> · n=${Math.round(wsum(ng)).toLocaleString()}`);
-  const wsRows=distSingle('want_start',IDX,ng.filter(i=>R.want_start[i]));
-  pieOrBar('ch-wantstart',wsRows); setBase('wantstart',`<b>${T('ofNonGamers')}</b> · n=${Math.round(wsum(ng.filter(i=>R.want_start[i]))).toLocaleString()}`);
-}
-
-/* attitudes rendering with detail-on-click */
-let selectedAtt=null;
-function attKeysList(){return Object.keys(D.attLabels);}
-function attAgree(key,idx){
-  let a=0,b=0;
-  for(const i of idx){const v=R[key][i];if(v==null)continue;const w=W(i);b+=w;if(v==='a')a+=w;}
-  return b?a/b*100:0;
-}
-function renderAttitudes(){
-  const list=document.getElementById('attList');
-  const keys=attKeysList();
-  const rows=keys.map(k=>({key:k,name:D.attLabels[k][li()],pct:attAgree(k,IDX)})).sort((a,b)=>b.pct-a.pct);
-  setBase('att',BASES.answered());
-  list.innerHTML=rows.map(r=>`
-    <div class="attrow" data-att="${r.key}">
-      <div class="nm">${r.name}</div>
-      <div class="bar"><div class="fill" style="width:${r.pct}%;background:${r.pct>=50?'#22c55e':'#4f8cff'}"></div><span class="pct">${r.pct.toFixed(1)}%</span></div>
-    </div>`).join('');
-  list.querySelectorAll('.attrow').forEach(el=>el.addEventListener('click',()=>selectAtt(el.dataset.att)));
-  if(!selectedAtt)selectedAtt=rows[0].key;
-  renderAttDetail();
-}
-function renderAttDetail(){
-  const key=selectedAtt;
-  document.getElementById('attDetailTitle').textContent=`${T('attVsX')}: «${D.attLabels[key][li()]}»`;
-  const groups=[];
-  // by sex
-  for(const s of ['m','f'])groups.push({name:lab(dicts.sex,s),idx:IDX.filter(i=>R.sex[i]===s)});
-  for(const a of ['14-17','18-24','25-34','35-44','45-54','55+'])groups.push({name:lab(dicts.age,a),idx:IDX.filter(i=>R.age[i]===a)});
-  groups.push({name:LANG==='ru'?'Игроки':'Gamers',idx:GAMERIDX});
-  groups.push({name:LANG==='ru'?'Не играют':'Non-gamers',idx:IDX.filter(i=>R.gamer[i]==='nongamer')});
-  const vals=groups.map(g=>({name:g.name,pct:attAgree(key,g.idx),n:g.idx.length}));
-  regChart('ch-attdetail',()=>({
-    grid:{left:8,right:44,top:10,bottom:6,containLabel:true},
-    tooltip:{...tooltipStyle,formatter:p=>`${p.name}: <b>${p.value}%</b>`},
-    xAxis:{type:'value',axisLabel:{...baseFont,formatter:'{value}%'},splitLine:{lineStyle:{color:'#222b38'}}},
-    yAxis:{type:'category',data:vals.map(v=>v.name).reverse(),axisLabel:{color:'#c6cfdb',fontSize:12},axisLine:{show:false}},
-    series:[{type:'bar',data:vals.map(v=>+v.pct.toFixed(1)).reverse(),itemStyle:{color:'#4f8cff',borderRadius:[0,3,3,0]},barMaxWidth:16,label:{show:true,position:'right',color:'#8b96a5',fontSize:11,formatter:'{c}%'}}]
-  }));
-}
-function selectAtt(key){selectedAtt=key;renderAttDetail();}
-function renderGenderAtt(){
-  const gk=['women_play_better','girls_for_characters','girls_for_attention','women_not_competitive','women_simpler_games'];
-  const rows=gk.map(k=>({name:D.attLabels[k][li()],pct:attAgree(k,IDX)}));
-  hbar('ch-genderatt',rows);
-}
-
-/* ============ correlation engine ============ */
-const CORR_VARS={
-  age:{ru:'Возраст (младше→старше)',en:'Age (younger→older)',get:i=>R.age[i]?{ '14-17':1,'18-24':2,'25-34':3,'35-44':4,'45-54':5,'55+':6 }[R.age[i]]:null},
-  sex:{ru:'Пол (м→ж)',en:'Sex (m→f)',get:i=>R.sex[i]==='m'?0:R.sex[i]==='f'?1:null},
-  income:{ru:'Доход (низ→высок)',en:'Income (low→high)',get:i=>R.income[i]?{low:1,mid:2,high:3}[R.income[i]]:null},
-  gamer:{ru:'Играет (0/1)',en:'Plays games (0/1)',get:i=>R.gamer[i]==='gamer'?1:R.gamer[i]==='nongamer'?0:null},
-  daily:{ru:'Играет ежедневно (0/1)',en:'Plays daily (0/1)',get:i=>R.freq[i]==='daily'?1:(R.freq[i]==null?null:0)},
-  hours:{ru:'Часов игры в неделю',en:'Weekly gaming hours',get:i=>R.hours[i]},
-  spend:{ru:'Траты на игры, ₽/год',en:'Annual gaming spend, ₽',get:i=>R.spend[i]},
-  buy:{ru:'Покупал игры (0/1)',en:'Buys games (0/1)',get:i=>R.buy[i]==='bought'?1:R.buy[i]==='notbought'?0:null},
-  foreign_acc:{ru:'Зарубежный аккаунт (0/1)',en:'Foreign account (0/1)',get:i=>R.foreign_acc[i]==='yes'?1:R.foreign_acc[i]==='no'?0:null},
-  torrent:{ru:'Торренты (0/1)',en:'Torrents (0/1)',get:i=>R.buy_ways[i].includes('torrent')?1:0},
-  selfid:{ru:'Считает себя геймером (0/1)',en:'Identifies as gamer (0/1)',get:i=>R.selfid[i]==='yes'?1:R.selfid[i]==='no'?0:null},
-  community:{ru:'В игровом сообществе (0/1)',en:'Gaming community member (0/1)',get:i=>R.community[i]==='member'?1:R.community[i]==='not'?0:null},
-  esports_def:{ru:'Верно определяет киберспорт (0/1)',en:'Defines esports correctly (0/1)',get:i=>R.esports_def[i]==='correct'?1:R.esports_def[i]==='incorrect'?0:null},
-  att_addiction:{ru:'«Игры → зависимость» (0/1)',en:'“Games→addiction” (0/1)',get:i=>R.addiction[i]==='a'?1:R.addiction[i]==='d'?0:null},
-  att_skills:{ru:'«Игры развивают навыки» (0/1)',en:'“Games develop skills” (0/1)',get:i=>R.useful_skills[i]==='a'?1:R.useful_skills[i]==='d'?0:null},
-  att_violence:{ru:'«Жестокость в играх → насилие» (0/1)',en:'“In-game violence→real violence” (0/1)',get:i=>R.violence_causes[i]==='a'?1:R.violence_causes[i]==='d'?0:null},
-  att_stereo:{ru:'Гендерные стереотипы (0/1)',en:'Gender stereotypes (0/1)',get:i=>(R.girls_for_attention[i]==='a'||R.women_simpler_games[i]==='a')?1:(R.girls_for_attention[i]==='d'&&R.women_simpler_games[i]==='d')?0:null},
-  edu:{ru:'Высшее образование (0/1)',en:'Higher education (0/1)',get:i=>R.edu[i]==='degree'?1:R.edu[i]==='no_degree'?0:null},
-  child_control:{ru:'Контролирует время ребёнка (0/1)',en:'Controls child’s playtime (0/1)',get:i=>R.child_control[i]==='yes'?1:R.child_control[i]==='no'?0:null},
-};
-function corr(a,b){
-  let n=0,sx=0,sy=0,sxx=0,syy=0,sxy=0,sw=0;
-  for(const i of IDX){
-    const x=a.get(i),y=b.get(i);
-    if(x==null||y==null)continue;
-    const w=W(i);
-    n++;sw+=w;sx+=w*x;sy+=w*y;sxx+=w*x*x;syy+=w*y*y;sxy+=w*x*y;
-  }
-  if(n<30)return{r:null,n};
-  const mx=sx/sw,my=sy/sw;
-  const cov=sxy/sw-mx*my;
-  const vx=sxx/sw-mx*mx,vy=syy/sw-my*my;
-  const r=(vx>0&&vy>0)?cov/Math.sqrt(vx*vy):0;
-  return{r,n};
-}
-function renderCorrSelectors(){
-  const A=document.getElementById('corrA'),B=document.getElementById('corrB');
-  const opts=Object.entries(CORR_VARS).map(([k,v])=>`<option value="${k}">${LANG==='ru'?v.ru:v.en}</option>`).join('');
-  if(A.options.length!==Object.keys(CORR_VARS).length){
-    A.innerHTML=opts;B.innerHTML=opts;
-    A.value='daily';B.value='hours';
-    A.addEventListener('change',renderCorr);B.addEventListener('change',renderCorr);
-  } else {
-    const av=A.value,bv=B.value;A.innerHTML=opts;B.innerHTML=opts;A.value=av;B.value=bv;
-  }
-}
-function renderCorr(){
-  renderCorrSelectors();
-  const a=CORR_VARS[document.getElementById('corrA').value];
-  const b=CORR_VARS[document.getElementById('corrB').value];
-  const {r,n}=corr(a,b);
-  const cr=document.getElementById('corrResult');
-  if(cr){
-    const color=r==null?'#8b96a5':Math.abs(r)<0.1?'#8b96a5':(r>0?'#22c55e':'#4f8cff');
-    cr.innerHTML=`<div style="color:${color}">${T('corrCoef')}: ${r==null?'—':(r>=0?'+':'')+r.toFixed(3)}</div><div class="sub">${T('corrN')}: ${n.toLocaleString()}</div>`;
-  }
-  // scatter with jitter for binary vars
-  const pts=[];
-  for(const i of IDX){
-    const x=a.get(i),y=b.get(i);
-    if(x==null||y==null)continue;
-    pts.push([x+(Math.random()-0.5)*0.24,y+(Math.random()-0.5)*0.24,W(i)]);
-  }
-  const samp=pts.length>4000?pts.filter(()=>Math.random()<4000/pts.length):pts;
-  regChart('ch-corr',()=>({
-    grid:{left:70,right:30,top:30,bottom:56},
-    tooltip:{...tooltipStyle,formatter:p=>`x: ${p.value[0].toFixed(2)}<br/>y: ${p.value[1].toFixed(2)}`},
-    xAxis:{min:Math.floor(Math.min(...samp.map(p=>p[0]))-0.2),max:Math.ceil(Math.max(...samp.map(p=>p[0]))+0.2),type:'value',name:(LANG==='ru'?document.getElementById('corrA').selectedOptions[0].textContent:document.getElementById('corrA').selectedOptions[0].textContent),nameLocation:'middle',nameGap:36,nameTextStyle:{color:'#8b96a5',fontSize:12,fontWeight:600},axisLabel:{...baseFont,formatter:v=>+v.toFixed(1)},splitLine:{lineStyle:{color:'#222b38'}}},
-    yAxis:{min:Math.floor(Math.min(...samp.map(p=>p[1]))-0.2),max:Math.ceil(Math.max(...samp.map(p=>p[1]))+0.2),type:'value',name:(document.getElementById('corrB').selectedOptions[0].textContent),nameTextStyle:{color:'#8b96a5',fontSize:12,fontWeight:600,align:'right'},axisLabel:{...baseFont,formatter:v=>+v.toFixed(1)},splitLine:{lineStyle:{color:'#222b38'}}},
-    series:[{type:'scatter',data:samp.map(p=>({value:[p[0],p[1]],symbolSize:4,itemStyle:{color:r>=0?'rgba(34,197,94,0.30)':'rgba(79,140,255,0.30)'}}))}]
-  }));
-}
-
-/* ============ fill selects ============ */
-function fillFilters(){
-  const fill=(id,dict)=>{
-    const el=document.getElementById(id);const cur=el.value;
-    const opts=Object.entries(dict).map(([k,v])=>`<option value="${k}">${v[li()]}</option>`).join('');
-    el.innerHTML=`<option value="">${T('fAll')}</option>`+opts;
-    el.value=cur;
-  };
-  fill('fSex',dicts.sex);
-  const ageSel=document.getElementById('fAge');const cur=ageSel.value;
-  ageSel.innerHTML=`<option value="">${T('fAll')}</option>`+['14-17','18-24','25-34','35-44','45-54','55+'].map(a=>`<option value="${a}">${lab(dicts.age,a)}</option>`).join('');
-  ageSel.value=cur;
-  fill('fCity',dicts.mil);
-  fill('fFO',dicts.fo);
-  const g=document.getElementById('fGamer');const cg=g.value;
-  g.innerHTML=`<option value="">${T('fAll')}</option><option value="gamer">${T('optGamer')}</option><option value="nongamer">${T('optNonGamer')}</option>`;
-  g.value=cg;
-}
-function bindFilters(){
-  [['fSex','sex'],['fAge','age'],['fCity','city'],['fFO','fo'],['fGamer','gamer']].forEach(([id,key])=>{
-    document.getElementById(id).addEventListener('change',e=>{F[key]=e.target.value;refresh();});
-  });
-}
-function resetFilters(){
-  F.sex=F.age=F.city=F.fo=F.gamer='';
-  ['fSex','fAge','fCity','fFO','fGamer'].forEach(id=>document.getElementById(id).value='');
-  refresh();
-}
-
-/* ============ i18n switch ============ */
+var PROJECTS=[{url:'https://vasiliyovchinnikov.github.io/gaming-in-russia-2026/',img:'og-cover.png',year:'2026'}];
+var LANG='ru';
+function $(id){return document.getElementById(id)}
 function setLang(l){
-  LANG=l;
-  document.getElementById('btnRu').classList.toggle('on',l==='ru');
-  document.getElementById('btnEn').classList.toggle('on',l==='en');
-  document.documentElement.lang=l==='ru'?'ru':'en';
-  document.title=l==='ru'?'Гейминг в России 2026 — интерактивный дашборд':'Gaming in Russia 2026 — interactive dashboard';
-  document.querySelectorAll('[data-i18n]').forEach(el=>{
-    const k=el.dataset.i18n;
-    if(I18N[l][k]!=null)el.textContent=I18N[l][k];
-  });
-  renderNav();
-  buildSkeleton();
-  fillFilters();
-  renderMethod();
-  refresh();
+  LANG=l;document.documentElement.lang=l;var t=L[l];
+  $('btnRu').className=l==='ru'?'on':'';
+  $('btnEn').className=l==='en'?'on':'';
+  $('mark').textContent=t.mark;
+  $('whoName').textContent=t.whoName;
+  $('whoRole').textContent=t.whoRole;
+  $('heroT').innerHTML=t.heroT;
+  $('heroP').textContent=t.heroP;
+  $('secL').textContent=t.sec;
+  $('hint').textContent=t.soon;
+  $('ftG').textContent=t.ftG;
+  $('grid').innerHTML=PROJECTS.map(function(p){
+    return '<a class="card" href="'+p.url+'">'
+      +'<div class="thumb"><img src="'+p.img+'" alt="'+t.dT+'"></div>'
+      +'<div class="cbody"><h2>'+t.dT+'</h2><div class="sub">'+t.dSub+'</div><p>'+t.dP+'</p>'
+      +'<div class="tags">'+t.tags.map(function(x){return '<span class="tag">'+x+'</span>'}).join('')+'</div>'
+      +'<div class="cfoot"><span class="go">'+t.open+' <span class="arr">→</span></span><span class="yr">'+p.year+'</span></div>'
+      +'</div></a>';
+  }).join('');
 }
-function renderMethod(){
-  document.getElementById('method').innerHTML=`<b>${T('methodTitle')}.</b> ${T('methodText')}`;
-}
-
-/* ============ main refresh ============ */
-function refresh(){
-  applyFilters();
-  renderKPIs();
-  renderCharts();
-  renderCorr();
-}
-
-/* ============ init ============ */
-document.addEventListener('DOMContentLoaded',()=>{
-  renderNav();
-  buildSkeleton();
-  fillFilters();
-  bindFilters();
-  renderMethod();
-  refresh();
-  window.addEventListener('resize',()=>{Object.values(CHARTS).forEach(c=>c.chart.resize());});
-});
+$('btnRu').onclick=function(){setLang('ru')};
+$('btnEn').onclick=function(){setLang('en')};
+setLang('ru');
 </script>
 </body>
 </html>
