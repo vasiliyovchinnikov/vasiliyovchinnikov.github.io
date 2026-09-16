@@ -35,6 +35,12 @@
     "url": "https://vasiliyovchinnikov.github.io/gaming-in-russia-2026/",
     "applicationCategory": "DataVisualization",
     "inLanguage": ["ru", "en"]
+  },{
+    "@type": "WebApplication",
+    "name": "ZOPA — переговоры в геймдеве",
+    "url": "https://vasiliyovchinnikov.github.io/zopa-app/",
+    "applicationCategory": "EducationalApplication",
+    "inLanguage": ["ru"]
   }]
 }
 </script>
@@ -120,7 +126,10 @@ var L={
      ftG:'Исходники на GitHub →',
      dT:'Гейминг в России 2026',dSub:'Gaming in Russia 2026',
      dP:'Интерактивный дашборд социологического исследования РВИ × НАФИ × ИФСИ: 4 932 респондента, 42 графика, живые фильтры и корреляции. Русский и английский.',
-     tags:['Социология','4 932 респондента','42 графика','RU / EN']},
+     dTags:['Социология','4 932 респондента','42 графика','RU / EN'],
+     zT:'ZOPA — переговоры в геймдеве',zSub:'Negotiation trainer',
+     zP:'Тренажёр переговоров для геймдева: кейсы студий, издателей и инвесторов, зона возможного соглашения и BATNA, ИИ-контрагент и разбор партии. Очки за ходы, штрафы за ошибки.',
+     zTags:['Переговоры','4 кейса','Геймификация','ИИ-контрагент']},
  en:{mark:'VO',whoName:'Vasily Ovchinnikov',whoRole:'public projects',
      heroT:'Dashboards and data — <span class="b">out in the open</span>',
      heroP:'Interactive web apps built on research data: everything runs right in your browser, nothing to install.',
@@ -128,9 +137,15 @@ var L={
      ftG:'Source code on GitHub →',
      dT:'Gaming in Russia 2026',dSub:'Гейминг в России 2026',
      dP:'Interactive dashboard of the RVI × NAFI × IFSI survey: 4,932 respondents, 42 charts, live filters and correlations. Russian and English.',
-     tags:['Survey data','4,932 respondents','42 charts','RU / EN']}
+     dTags:['Survey data','4,932 respondents','42 charts','RU / EN'],
+     zT:'ZOPA — game dev negotiations',zSub:'Переговоры в геймдеве',
+     zP:'A negotiation trainer for the game industry: publisher, angel investor, buyout and outsourcing cases, ZOPA and BATNA planning, gamified practice with an AI counterpart and a post-game debrief.',
+     zTags:['Negotiations','4 cases','Gamified','AI counterpart']}
 };
-var PROJECTS=[{url:'https://vasiliyovchinnikov.github.io/gaming-in-russia-2026/',img:'og-cover.png',year:'2026'}];
+var PROJECTS=[
+ {url:'https://vasiliyovchinnikov.github.io/gaming-in-russia-2026/',img:'og-cover.png',year:'2026',key:'d'},
+ {url:'https://vasiliyovchinnikov.github.io/zopa-app/',img:'zopa-cover.png',year:'2026',key:'z'}
+];
 var LANG='ru';
 function $(id){return document.getElementById(id)}
 function setLang(l){
@@ -147,9 +162,9 @@ function setLang(l){
   $('ftG').textContent=t.ftG;
   $('grid').innerHTML=PROJECTS.map(function(p){
     return '<a class="card" href="'+p.url+'">'
-      +'<div class="thumb"><img src="'+p.img+'" alt="'+t.dT+'"></div>'
-      +'<div class="cbody"><h2>'+t.dT+'</h2><div class="sub">'+t.dSub+'</div><p>'+t.dP+'</p>'
-      +'<div class="tags">'+t.tags.map(function(x){return '<span class="tag">'+x+'</span>'}).join('')+'</div>'
+      +'<div class="thumb"><img src="'+p.img+'" alt="'+t[p.key+'T']+'"></div>'
+      +'<div class="cbody"><h2>'+t[p.key+'T']+'</h2><div class="sub">'+t[p.key+'Sub']+'</div><p>'+t[p.key+'P']+'</p>'
+      +'<div class="tags">'+t[p.key+'Tags'].map(function(x){return '<span class="tag">'+x+'</span>'}).join('')+'</div>'
       +'<div class="cfoot"><span class="go">'+t.open+' <span class="arr">→</span></span><span class="yr">'+p.year+'</span></div>'
       +'</div></a>';
   }).join('');
