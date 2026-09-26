@@ -124,9 +124,12 @@ var L={
      heroP:'Интерактивные веб-приложения на данных исследований: всё считается прямо в браузере, ничего устанавливать не нужно.',
      sec:'Проекты',open:'Открыть',soon:'Здесь будут появляться новые проекты.',
      ftG:'Исходники на GitHub →',
-     dT:'Гейминг в России 2026',dSub:'Gaming in Russia 2026',
-     dP:'Интерактивный дашборд социологического исследования РВИ × НАФИ × ИФСИ: 4 932 респондента, 42 графика, живые фильтры и корреляции. Русский и английский.',
-     dTags:['Социология','4 932 респондента','42 графика','RU / EN'],
+     dT22:'Гейминг в России 2022',dSub22:'Gaming in Russia 2022',
+     dP22:'Интерактивный дашборд исследования НАФИ × РВИ: 1 600 респондентов, 53 региона, 16 графиков, разрезы, комментарии экспертов и скрытые закономерности данных. Русский и английский.',
+     dTags22:['Социология','1 600 респондентов','16 графиков','RU / EN'],
+     dT26:'Гейминг в России 2026',dSub26:'Gaming in Russia 2026',
+     dP26:'Интерактивный дашборд социологического исследования РВИ × НАФИ × ИФСИ: 4 932 респондента, 42 графика, живые фильтры и корреляции. Русский и английский.',
+     dTags26:['Социология','4 932 респондента','42 графика','RU / EN'],
      zT:'ZOPA — переговоры в геймдеве',zSub:'Negotiation trainer',
      zP:'Тренажёр переговоров для геймдева: кейсы студий, издателей и инвесторов, зона возможного соглашения и BATNA, ИИ-контрагент и разбор партии. Очки за ходы, штрафы за ошибки.',
      zTags:['Переговоры','4 кейса','Геймификация','ИИ-контрагент']},
@@ -135,14 +138,18 @@ var L={
      heroP:'Interactive web apps built on research data: everything runs right in your browser, nothing to install.',
      sec:'Projects',open:'Open',soon:'New projects will appear here.',
      ftG:'Source code on GitHub →',
-     dT:'Gaming in Russia 2026',dSub:'Гейминг в России 2026',
-     dP:'Interactive dashboard of the RVI × NAFI × IFSI survey: 4,932 respondents, 42 charts, live filters and correlations. Russian and English.',
-     dTags:['Survey data','4,932 respondents','42 charts','RU / EN'],
+     dT22:'Gaming in Russia 2022',dSub22:'Гейминг в России 2022',
+     dP22:'Interactive dashboard of the NAFI × RVI survey: 1,600 respondents, 53 regions, 16 charts, breakdowns, expert commentary and hidden data patterns. Russian and English.',
+     dTags22:['Survey data','1,600 respondents','16 charts','RU / EN'],
+     dT26:'Gaming in Russia 2026',dSub26:'Гейминг в России 2026',
+     dP26:'Interactive dashboard of the RVI × NAFI × IFSI survey: 4,932 respondents, 42 charts, live filters and correlations. Russian and English.',
+     dTags26:['Survey data','4,932 respondents','42 charts','RU / EN'],
      zT:'ZOPA — game dev negotiations',zSub:'Переговоры в геймдеве',
      zP:'A negotiation trainer for the game industry: publisher, angel investor, buyout and outsourcing cases, ZOPA and BATNA planning, gamified practice with an AI counterpart and a post-game debrief.',
      zTags:['Negotiations','4 cases','Gamified','AI counterpart']}
 };
 var PROJECTS=[
+ {url:'https://vasiliyovchinnikov.github.io/gaming-in-russia-2022/',img:'og-cover-2022.png',year:'2022',key:'22'},
  {url:'https://vasiliyovchinnikov.github.io/gaming-in-russia-2026/',img:'og-cover.png',year:'2026',key:'d'},
  {url:'https://vasiliyovchinnikov.github.io/zopa-app/',img:'zopa-cover.png',year:'2026',key:'z'}
 ];
@@ -162,11 +169,11 @@ function setLang(l){
   $('ftG').textContent=t.ftG;
   $('grid').innerHTML=PROJECTS.map(function(p){
     return '<a class="card" href="'+p.url+'">'
-      +'<div class="thumb"><img src="'+p.img+'" alt="'+t[p.key+'T']+'"></div>'
-      +'<div class="cbody"><h2>'+t[p.key+'T']+'</h2><div class="sub">'+t[p.key+'Sub']+'</div><p>'+t[p.key+'P']+'</p>'
-      +'<div class="tags">'+t[p.key+'Tags'].map(function(x){return '<span class="tag">'+x+'</span>'}).join('')+'</div>'
-      +'<div class="cfoot"><span class="go">'+t.open+' <span class="arr">→</span></span><span class="yr">'+p.year+'</span></div>'
-      +'</div></a>';
+          +'<div class="thumb"><img src="'+p.img+'" alt="'+t[p.key+'T']+'"></div>'
+          +'<div class="cbody"><h2>'+t[p.key+'T']+'</h2><div class="sub">'+t[p.key+'Sub']+'</div><p>'+t[p.key+'P']+'</p>'
+          +'<div class="tags">'+t[p.key+'Tags'].map(function(x){return '<span class="tag">'+x+'</span>'}).join('')+'</div>'
+          +'<div class="cfoot"><span class="go">'+t.open+' <span class="arr">→</span></span><span class="yr">'+p.year+'</span></div>'
+          +'</div></a>';
   }).join('');
 }
 $('btnRu').onclick=function(){setLang('ru')};
